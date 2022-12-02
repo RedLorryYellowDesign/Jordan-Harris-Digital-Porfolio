@@ -1,62 +1,172 @@
-{% extends 'base.html' %}
-
-    {% block head %}
-
-    {% endblock %}
-
-    {% block body %}
-  </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jordan Harris</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:}
+</style>
 </head>
 <body>
-  <article id="fb22461b-39b7-463d-bc74-fe31dfcdebac" class="page sans">
-    <header>
-  <h1 class="page-title">Hello &amp; Welcome</h1>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Jordan<br>Harris</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Jordan Harris</span>
 </header>
-<div class="page-body">
-  <blockquote id="e25c51ae-3269-4c42-8184-1f533264c673" class=""><mark class="highlight-orange">
-      <strong>I&#x27;m Jordan Harris, a designer,        </strong></mark><p id="b2107684-67b4-4899-a901-24efe63aed5b" class=""><mark class="highlight-orange"><strong>coder and creative from the UK</strong></mark></p></blockquote>
-  <p id="cb71278c-5834-4451-8346-91b5083aa49e" class="">
-    <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style>
-    <span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="grey"><mstyle mathsize="0.9em"><mtext>⇨</mtext></mstyle></mstyle></mrow><annotation encoding="application/x-tex">\color {grey} \small ⇨</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord sizing reset-size6 size5" style="color:grey;">⇨</span></span></span></span></span><span>﻿</span></span><mark class="highlight-gray"> 01 - A Snap Shot of me</mark></p><div id="ee46c2fb-0416-4156-af29-ac85e9a3a570" class="column-list"><div id="103e8fa1-df67-4006-8432-a345553cca2c" style="width:33.33333333333333%" class="column"><div><h2 id="1461a047-10c0-4080-a32a-58118ac9ea83" class=""><mark class="highlight-orange">A Little Bit About Me </mark></h2><hr id="8b918ee0-1827-48c9-8c38-2b4692f38812"/><p id="bbe96226-2dea-4966-9f17-d5200ee81e12" class="block-color-gray_background"> █▒▒▒▒▒▒▒▒▒
-  10% Done - Nice, But A Sorry Cliché Below</p><h3 id="d3f6351b-fe43-47f5-8de4-07ea416afab0" class="">This is me
-    <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style>
-    <span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathsize="1.2em"><mtext>⇩</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large ⇩</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord sizing reset-size6 size7">⇩</span></span></span></span></span><span>﻿</span></span></h3><figure id="76e75aa1-2f61-4ec6-85db-d90a29bcf0d2" class="image"><a href="Hello%20&amp;%20Welcome%20fb22461b39b7463dbc74fe31dfcdebac/41162374b114aec9bc214fd6a9a1f44f.jpg"><img style="width:600px" src="Hello%20&amp;%20Welcome%20fb22461b39b7463dbc74fe31dfcdebac/41162374b114aec9bc214fd6a9a1f44f.jpg"/></a></figure><h3 id="59877895-0451-4c12-a80f-6d76e7709cf0" class="">My Basic Details  </h3><p id="e1c0e195-0e71-4220-a804-4c72df065efc" class="">My Name is <mark class="highlight-orange"><strong>Jordan Lee Harris</strong></mark> and I was born on the <mark class="highlight-orange"><strong>6th of June 1995 </strong></mark>in <mark class="highlight-orange"><strong>Kent, United Kingdom</strong></mark>. I&#x27;m formally trained in Architecture with roughly 5 years of industry exspirnace. This has given me a strong foundation in problem solving, working in dynamic teams of varying scale and discipline in mutable sectors, nations cultures and languages. I have also gained strong self motivation skills </p>
-  <p id="7a963ed4-5763-4ac2-861c-0655abdccfc8" class="">
- </p>
- <p id="13c1a671-ea8d-404b-9e38-f9834c0b627f" class="">most importantly the ability to quickly learn and adapt to a task, challenge, problem and my own mistakes. </p><p id="6a424a9e-723a-4eab-9c21-846d9b3fe8e1" class="">
- </p>
- <p id="00d71eae-506a-4ed3-af35-3c3fb2a06fc7" class="">I have also </p><p id="ed087e86-9303-417e-9602-af8a97db2ea2" class="">
- </p><p id="5d9d52e8-bed8-4840-a083-94984ef81eb2" class=""> and work in the industry and I&#x27;m moving to a <strong><mark class="highlight-orange">Coding</mark></strong> role. I&#x27;m hoping to find a Graceful balance between my chosen disciplines.  </p><h3 id="ea477fff-e773-43b1-8425-757c4c37dd1b" class="">A Quick Overview </h3><p id="41616c5b-47a3-42f6-9d21-8148730f8e0b" class="">I am a highly motivated, driven, and creative self-starter who&#x27;s founded projects, most notably the Autism related Pangolin project. </p><p id="4f885af1-0987-41db-a421-0d970f869608" class="">I also volunteer my time to charity projects including “A Village in Syria”. Interest in the physical and digital construction industry has led me to continue developing my technical skills with my current and recent endeavours encompassing coding, software development, VR/AR, 4D construction, BIM modelling, Digital Twin, and simulations.</p><h3 id="1eacf5ff-7c33-461b-9271-5f01a384545e" class="">Let&#x27;s Go a little more in-depth</h3><ul id="b8333b1e-89b2-4f30-9f9c-879d7e568409" class="bulleted-list"><li style="list-style-type:disc">I am passionate about technology and am always building and modifying computers and other items for instance; Websites, software, and hardware including 3D printing.<ul id="84b544f4-014d-4d28-a40b-d29ae4ec3707" class="bulleted-list"><li style="list-style-type:circle">I enjoy Health and fitness both physical and mental including running, gaming, and self-care.</li></ul></li></ul><ul id="591cac01-b812-447e-bd12-77ff66f15fab" class="bulleted-list"><li style="list-style-type:disc">I love learning and I&#x27;m always attending courses in my free time to add skills that interest me and further my technical skill and career goals. </li></ul><ul id="d70a7c8a-90c4-4823-873f-e4a4865d7193" class="bulleted-list"><li style="list-style-type:disc">I have a strong opinion towards Neurodiversity and inclusive design. An approach I bring with me into all of my endeavours. </li></ul></div><p id="5829a82c-12c6-4a5f-a0d5-c51458c9bf36" class="">
- </p>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" id="services" style="margin-top:80px">
+    <h1 class="w3-jumbo"><b>Hello & Welcome 👋🏻</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>About me.</b></h1>
+    <hr style="width:50px;border:12px solid red" class="w3-round">
+    <h3>My Basic Details</h3>
+    <p>My Name is <strong>Jordan Lee Harris</strong> and I was born on the <strong>6th of June 1995</strong> in </strong>Kent, United Kingdom</strong>. I'm formally trained in Architecture with roughly 5 years of industry exspirnace. This has given me a strong foundation in problem solving, working in dynamic teams of varying scale and discipline in mutable sectors, nations cultures and languages. I have also gained strong self motivation skills
+
+most importantly the ability to quickly learn and adapt to a task, challenge, problem and my own mistakes.
+
+I have also
+
+ and work in the industry and I'm moving to a **Coding** role. I'm hoping to find a Graceful balance between my chosen disciplines.
+ 	</p>
+    <h3>A Quick Overview</h3>
+	<p>
+
+I am a highly motivated, driven, and creative self-starter who's founded projects, most notably the Autism related Pangolin project.
+
+I also volunteer my time to charity projects including “A Village in Syria”. Interest in the physical and digital construction industry has led me to continue developing my technical skills with my current and recent endeavours encompassing coding, software development, VR/AR, 4D construction, BIM modelling, Digital Twin, and simulations.
+    <h3>Let's Go a little more in-depth</h3>
+- I am passionate about technology and am always building and modifying computers and other items for instance; Websites, software, and hardware including 3D printing.
+    - I enjoy Health and fitness both physical and mental including running, gaming, and self-care.
+- I love learning and I'm always attending courses in my free time to add skills that interest me and further my technical skill and career goals.
+- I have a strong opinion towards Neurodiversity and inclusive design. An approach I bring with me into all of my endeavours.
+	</p>
 </div>
-<div id="a123914d-890e-435c-9b98-02f89bc46391" style="width:33.33333333333333%" class="column"><div>
-  <h2 id="861b270f-7542-4736-84b2-82f228c1983d" class="">
-    <mark class="highlight-orange">Employment</mark>
-  </h2>
-  <hr id="3bc3a995-abf6-402e-be80-523074cc7779"/>
-  <p id="3c3ae0b9-bced-40ea-bb0c-366a519813f7" class="block-color-gray_background"> ██▒▒▒▒▒▒▒▒20% Done - </p>
-  <h3 id="f17ab289-e421-4dfa-877d-b5ae34f5e406" class="">System Architect - Digital <strong>Operations Manager </strong>
-  </h3>
-  <blockquote id="5a9a6501-f61e-4963-be2c-aecdd144158f" class="block-color-gray">
-    <strong>
-      <a href="https://www.hale-adm.com/">Hale Architecture</a>
-    </strong>
-    <em>, London UK  </em>
-    <p id="22dd1d3a-8a65-4cf5-afd5-725a88666bcf" class="">
-      <mark class="highlight-gray">
-        <code>04:2022 - Present</code>
-      </mark>
+  <!-- Designers -->
+
+<!-- WIP Section
+
+<div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Projects.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
-  </blockquote>
-  <ul id="7b9cc010-045f-4314-af85-298b15200e59" class="toggle"><li><details open=""><summary>Role Bio </summary><p id="50398e74-0242-4472-84e8-1be49ebadfd6" class="">My role was quite a uneq one that required me to cover the roles of an <strong><mark class="highlight-orange">Architect, IT manager, Building information Modelling Manager, Systems architect</mark></strong><strong> </strong>and <strong><mark class="highlight-orange">Cloud architect</mark></strong> all within one role. </p><p id="af024615-a898-4280-b777-f3acac004212" class="">Due to hales size and requirements at the time they needed all of the following roles but sat at a tipping point between when it needed the roles inhouse. As someone who could offer a suitable knowledge level in all there required needs my role was created. </p><p id="5e4b10be-93c8-4881-83c4-9d89113defdf" class="">This role have given me the chance to learn new technologies and then implement them in a real world environment with all of my work being live and user tested. </p><p id="92ebaa94-5c5d-4621-bddb-1c5326133999" class="">I gained exspirniaces in managing large project, working with 3rd parties at different scales </p></details></li></ul><ul id="b40cd694-5873-4284-9e47-7a4729169240" class="toggle"><li><details open=""><summary>Key Points      bb </summary><ul id="90f47327-e7c6-4a76-a087-c1f7994d86e8" class="bulleted-list"><li style="list-style-type:disc">Spearheaded <mark class="highlight-orange">ISO 19650</mark> compliance company-wide </li></ul><ul id="c577521f-cc31-447e-bbdc-2e2a27b4fb8b" class="bulleted-list"><li style="list-style-type:disc">Build a flexible cloud-based infrastructure to suit Hale&#x27;s hybrid work approach and start expansion using Microsoft Azure </li></ul><ul id="ead24a05-73e2-40ab-b5db-26ff46104caf" class="bulleted-list"><li style="list-style-type:disc">Designed and deployed a SharePoint site to help better facilitate a hybrid approach to working as well as to support standards enforcement  </li></ul><ul id="8dc4f06d-c1db-4fa6-adbc-3f86fb52ff28" class="bulleted-list"><li style="list-style-type:disc">Introduce Agile Scrum methodology to facilitate a more efficient workflow in addition to blending that to be compatible with the RIBA stage 1-7 plan of works. </li></ul><ul id="07640ff1-1d14-465a-8fe6-1660eabe57e0" class="bulleted-list"><li style="list-style-type:disc">Developed hales BIM Infrastructure</li></ul><ul id="79225d9a-320d-4d1f-8f47-481c6102f25d" class="bulleted-list"><li style="list-style-type:disc">Operated in a flexible Design role both directly designing and managing projects as well as support other design teams with my Technical Graphical, CGI and BIM skill sets.  </li></ul><ul id="bd9a0686-319b-4304-9b92-000a3417a323" class="bulleted-list"><li style="list-style-type:disc">I built bespoke tool primarily in python as plugins for Revit via PYRevit and standalone application via Docker or as a stand alone windows application. </li></ul><ul id="333870ed-582d-4c4b-880d-77874f43aea2" class="bulleted-list"><li style="list-style-type:disc">Introduced a plethora of new tool in addition to also providing and creating training, templates and technical recourses either independently or within with the OEM. </li></ul></details></li></ul><h3 id="3e3c621e-4b69-4467-87fd-866c6a055301" class="">Architectural Designer </h3><blockquote id="ccd4e77f-1722-4be3-b8eb-f5db434a0e5a" class="block-color-gray"><a href="https://www.cocoarchitects.com/"><strong><mark class="highlight-gray">COCO Consultancy LTD</mark></strong></a><mark class="highlight-gray">, London UK + Barcelona ES </mark><p id="974e1ded-e95d-48fc-8e3b-8e89852aa12f" class=""><mark class="highlight-gray"><code>10:2019 - 01:2022</code></mark></p></blockquote><ul id="25581f98-3fa2-40b6-877f-d0f414a2f4a8" class="toggle"><li><details open=""><summary>Role Bio </summary><p id="a1ef2b19-da38-492a-8c0b-3b8086fe2ffa" class="">My role at Coco was primarily that of a Part ii Architectural assistant but with a </p></details></li></ul><ul id="9c67207e-e6bf-4d7e-a974-02b3a2aa9bd2" class="toggle"><li><details open=""><summary>Key Points</summary><ul id="76f550a4-faf0-4ebf-b1a9-37f9beed3223" class="bulleted-list"><li style="list-style-type:disc">BIM LV1 projects via Revit</li></ul><ul id="235197cb-9b5f-4e5c-bcbc-0c4e84b66917" class="bulleted-list"><li style="list-style-type:disc">Production of photo realistic visualizations for use with clients and local councils.</li></ul><ul id="cd775d8e-c348-4dfd-82b8-56d27d2141a8" class="bulleted-list"><li style="list-style-type:disc">Supporting the creation of planning documents for the planning authority in the UK and Spain</li></ul><ul id="0057727c-f17a-438f-a2ca-cc41a121e2d9" class="bulleted-list"><li style="list-style-type:disc">Spearheading the design and construction of the website for COCO consultancy ltd</li></ul><ul id="9df945bf-d427-4286-b33d-7259c4671129" class="bulleted-list"><li style="list-style-type:disc">Creating parametric modelling via Revit, Rhino &amp; Grasshopper from architects’ CAD drawings.</li></ul><p id="ad317074-1126-4294-98eb-a830c7fe4de0" class="">
- </p></details></li></ul><h3 id="282603df-7914-448a-b267-0c65acb80d62" class="">Design Consultant </h3><blockquote id="d1de3f48-03c5-4e5b-bbc0-a667fadf7863" class=""><a href="https://www.avillageinsyria.org/"><strong>A Village In Syria</strong></a>, Canterbury<p id="5eb31abb-f795-4183-b73f-5d7a4d60567c" class=""><mark class="highlight-gray"><code>02:2021 - 10:2021</code></mark></p></blockquote><ul id="44a04eaf-6aa5-4588-a8f3-12dc084afa86" class="toggle"><li><details open=""><summary>Role Bio </summary><p id="795b6601-ed86-4fb2-9bce-71e169936ce3" class="">
- </p></details></li></ul><ul id="c7e36ff5-4485-42cc-ba3c-af5764e601c7" class="toggle"><li><details open=""><summary>Key Points </summary><ul id="b37061c6-67ca-47aa-b8a3-b63a97e6bb83" class="bulleted-list"><li style="list-style-type:disc">I assisted with the design and delivery of a public centre in Turkey for the charity</li></ul><p id="54728e93-2218-4c04-9e22-a2c566a27796" class="">
- </p></details></li></ul><h3 id="b119595c-25d7-447c-8dec-b6813811f3b1" class="">Architectural Assistant </h3><blockquote id="8fd5a28e-136b-454c-9727-d3a243fbe083" class="block-color-gray"><a href="https://www.hmy.uk.com/"><strong><mark class="highlight-gray">Hazle McCormack Young LLP</mark></strong></a><mark class="highlight-gray">, Tunbridge Wells UK  </mark><p id="4d563eae-987c-46f0-a39d-8ac00d73b8ef" class=""><mark class="highlight-gray"><code>08:2017 - 08:2019</code></mark></p></blockquote><ul id="12b462de-716b-4ade-9f6d-8d6f1a14099f" class="toggle"><li><details open=""><summary>Role Bio </summary><p id="2900eafb-0849-472d-aacf-ba173498ae1a" class="">
- </p></details></li></ul><ul id="5fc8b804-18b8-452d-9a52-afdd917faaf1" class="toggle"><li><details open=""><summary>Key Points </summary><ul id="f292a2c8-4847-41b8-9bb2-98b2098df636" class="bulleted-list"><li style="list-style-type:disc">BIM lv1/2 in Residential, Education, and Civic Projects vis Revit</li></ul><ul id="3e3866f9-7a0c-4a70-bc62-25b3d7dbe5e0" class="bulleted-list"><li style="list-style-type:disc">Visualisations via Vray + Enscape</li></ul><ul id="31e4bd97-28e2-4cf9-9d02-6cfc2318019c" class="bulleted-list"><li style="list-style-type:disc">Planning Application and project development from RIBA stage 1 - 7</li></ul></details></li></ul><h3 id="014da349-0460-4ed1-a65f-5be81bf3fb76" class="">Architectural Assistant </h3><blockquote id="addcdad7-c183-45a5-8f99-1272cc1f2a75" class="block-color-gray">Sir Robert McAlpine, London UK<p id="d4673900-4333-4aca-ba61-d23b974d7a06" class=""><mark class="highlight-gray"><code>02:2017 - 06:2017</code></mark></p></blockquote><ul id="396f360f-cdfb-4516-858e-f66783f55f41" class="toggle"><li><details open=""><summary>Role Bio </summary><p id="bc6e122b-d688-47bd-86a9-fa796cfb81f5" class="">
- </p></details></li></ul><ul id="7fb5f888-cce9-47e2-9d82-a16abde72674" class="toggle"><li><details open=""><summary>Key Points </summary><ul id="44e7358a-bdc7-4be9-a555-92b7d84a7e9a" class="bulleted-list"><li style="list-style-type:disc">Worked as part of a 4 personal design team to propose a new respite space for the broad-gate estate project.</li></ul><p id="20ef0306-eea3-49cf-9699-b40aedfdc369" class="">
- </p></details></li></ul><h2 id="67edb00e-a17e-4e01-a744-f8147998c0cd" class="block-color-orange"><strong> </strong>Internships &amp; Mentoring</h2><div id="94032b3e-4309-43e7-8967-8e499a0d3a59" class="column-list"><div id="a56d0152-a55b-4440-ba6a-97715d7bae7c" style="width:100%" class="column"><blockquote id="bf7bde1c-84a8-44b4-a6c7-977142d45515" class="block-color-gray">All Design <p id="5ff382a8-727b-41f2-8cf7-f15705cde015" class=""><mark class="highlight-gray"><code>2018</code></mark></p></blockquote><blockquote id="1997a27c-77c5-4aa9-be65-4199abd8536c" class="block-color-gray">Nenad Architects <p id="b92ca25a-644b-457e-aedf-512dc1a9ed3b" class=""><mark class="highlight-gray"><code>2017</code></mark><mark class="highlight-gray"> </mark></p></blockquote><p id="f2d83f89-fb50-4025-ba5d-a8ae6b9d829d" class="">
- </p></div><div id="6c0630a3-c6b5-44cd-96c6-22bea0aaa5fe" style="width:100%" class="column"><blockquote id="c4e11003-2b9f-46ea-8f7e-2a8ba0961724" class="block-color-gray">Bentham Design<p id="c41286fa-4f6e-48e6-a4ae-24c0d07581f2" class=""><mark class="highlight-gray"><code>2018</code></mark><mark class="highlight-gray"> </mark></p></blockquote><blockquote id="be0239e7-07d5-45d8-aa15-4e835bc72573" class="block-color-gray">Lanham Architects <p id="b63d4058-3830-4137-92b7-49869bc1c8d0" class=""><mark class="highlight-gray"><code>2016</code></mark><mark class="highlight-gray"> </mark></p></blockquote><p id="a5d95b54-1382-4825-a300-e46d7319224c" class="">
- </p></div></div></div></div><div id="ba39233b-eeeb-4712-ba69-17b3051a5b04" style="width:33.33333333333334%" class="column"><h2 id="97a400d6-0e87-45a3-89dc-865f3e6cc845" class=""><mark class="highlight-orange">Education</mark></h2><hr id="9d166e03-b13e-4d0e-af40-4da87e31ec95"/><p id="bbcc44a3-f780-4c72-b72d-bb63193ee583" class="block-color-gray_background"> ███▒▒▒▒▒▒▒
-  30% Done - </p><h3 id="6060821a-505c-489c-974f-8f0ac5c1f12b" class="">Data Science</h3><blockquote id="4b242ee4-093d-4c74-b8a8-9aedddcd23b8" class="block-color-gray"><a href="https://www.lewagon.com/"><strong>Le Wagon London</strong></a> - Coding Bootcamp          <p id="e2064ed1-ee8a-4330-a60c-4c2a40e99fcc" class=""><mark class="highlight-gray"><code>04:2022 - 10:2022</code></mark></p></blockquote><h3 id="6c8abbcc-4c49-44b7-82ed-1fb105d4fa67" class="">Software Development</h3><blockquote id="50cb8601-f912-4cbd-b50e-e03e320f317c" class="block-color-gray"><a href="https://www.northumbria.ac.uk/study-at-northumbria/continuing-professional-development-short-courses-specialist-training/skills-bootcamp-in-software/">Northumbria university </a>- Skills Bootcamp<p id="8901570f-e6a1-4c93-800e-e1956f5995ef" class=""><mark class="highlight-gray"><code>01:2022 - 04:2022</code></mark></p></blockquote><h3 id="7f1278d2-b1a9-44ff-895c-d49578d02476" class="">Masters of Architecture (MArch ARB/RIBA ii)</h3><blockquote id="da0fed9a-9288-47f5-af99-33d908c593cf" class="block-color-gray"><a href="https://www.kent.ac.uk/courses/undergraduate/889/architecture-2"><strong>University of Kent</strong></a>  - School of Architect            <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathsize="0.8em"><mstyle mathcolor="grey"><mrow><mn mathvariant="monospace">09</mn><mo>:</mo><mn mathvariant="monospace">2019</mn><mo>−</mo><mn mathvariant="monospace">05</mn><mo>:</mo><mn mathvariant="monospace">2021</mn></mrow></mstyle></mstyle></mrow><annotation encoding="application/x-tex">    \footnotesize\color {grey} \mathtt{09:2019 - 05:2021}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.555552em;vertical-align:-0.066664em;"></span><span class="mord sizing reset-size6 size4" style="color:grey;"><span class="mord mathtt" style="color:grey;">09</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mrel" style="color:grey;">:</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mord mathtt" style="color:grey;">2019</span><span class="mspace" style="color:grey;margin-right:0.26022222222222224em;"></span><span class="mbin" style="color:grey;">−</span><span class="mspace" style="color:grey;margin-right:0.26022222222222224em;"></span><span class="mord mathtt" style="color:grey;">05</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mrel" style="color:grey;">:</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mord mathtt" style="color:grey;">2021</span></span></span></span></span></span><span>﻿</span></span></blockquote><h3 id="60d8682c-2605-4fb3-b163-d29ceb52aa85" class="">Architectural Imagination</h3><blockquote id="31b68806-b69b-4714-9996-f80775b13aaf" class="block-color-gray"><a href="https://pll.harvard.edu/course/architectural-imagination?delta=0"><strong>EDX &amp; Harvard GSD</strong></a> - Short Course                   <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathsize="0.8em"><mstyle mathcolor="grey"><mrow><mn mathvariant="monospace">09.2017</mn><mo>−</mo><mn mathvariant="monospace">01.2018</mn></mrow></mstyle></mstyle></mrow><annotation encoding="application/x-tex">    \footnotesize\color {grey} \mathtt{09.2017 - 01.2018  }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.555552em;vertical-align:-0.066664em;"></span><span class="mord sizing reset-size6 size4" style="color:grey;"><span class="mord mathtt" style="color:grey;">09.2017</span><span class="mspace" style="color:grey;margin-right:0.26022222222222224em;"></span><span class="mbin" style="color:grey;">−</span><span class="mspace" style="color:grey;margin-right:0.26022222222222224em;"></span><span class="mord mathtt" style="color:grey;">01.2018</span></span></span></span></span></span><span>﻿</span></span></blockquote><h3 id="a0ed99dd-5746-4e15-a966-618ad6167b23" class="">Architecture (BSc Hons: ARB/RIBA i) </h3><blockquote id="2d8c06bd-7ef8-4e26-b510-f9274de0f26a" class="block-color-gray"><a href="https://www.uel.ac.uk/undergraduate/courses/bsc-hons-architecture-arbriba"><strong>University of East London</strong></a> - School of Architecture Computing &amp; Engineering <p id="2bad53fc-ae82-4948-9923-1135b962b23d" class="block-color-gray"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathsize="0.8em"><mstyle mathcolor="grey"><mrow><mn mathvariant="monospace">09</mn><mo>:</mo><mn mathvariant="monospace">2014</mn><mo>−</mo><mn mathvariant="monospace">06</mn><mo>:</mo><mn mathvariant="monospace">2017</mn></mrow></mstyle></mstyle></mrow><annotation encoding="application/x-tex">      \footnotesize\color {grey} \mathtt{09:2014 - 06:2017}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.555552em;vertical-align:-0.066664em;"></span><span class="mord sizing reset-size6 size4" style="color:grey;"><span class="mord mathtt" style="color:grey;">09</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mrel" style="color:grey;">:</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mord mathtt" style="color:grey;">2014</span><span class="mspace" style="color:grey;margin-right:0.26022222222222224em;"></span><span class="mbin" style="color:grey;">−</span><span class="mspace" style="color:grey;margin-right:0.26022222222222224em;"></span><span class="mord mathtt" style="color:grey;">06</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mrel" style="color:grey;">:</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mord mathtt" style="color:grey;">2017</span></span></span></span></span></span><span>﻿</span></span></p></blockquote><h3 id="7bfaa6ef-768c-43b6-bf48-a5b966938daf" class="">A levels + GCSE </h3><blockquote id="35870e3c-49f5-478d-83e2-a1edea1f50ca" class="block-color-gray"><strong><a href="https://www.uplandscc.com/"><mark class="highlight-gray">Uplands Community &amp; Technology Collage</mark></a></strong><mark class="highlight-gray">  - General Schooling </mark><p id="2cba55f9-d60d-4b68-bd86-d37e36f2a33c" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathsize="0.8em"><mstyle mathcolor="grey"><mrow><mn mathvariant="monospace">09</mn><mo>:</mo><mn mathvariant="monospace">2010</mn><mo>−</mo><mn mathvariant="monospace">09</mn><mo>:</mo><mn mathvariant="monospace">2014</mn></mrow></mstyle></mstyle></mrow><annotation encoding="application/x-tex">\footnotesize\color {grey} \mathtt{09:2010 - 09:2014}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.555552em;vertical-align:-0.066664em;"></span><span class="mord sizing reset-size6 size4" style="color:grey;"><span class="mord mathtt" style="color:grey;">09</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mrel" style="color:grey;">:</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mord mathtt" style="color:grey;">2010</span><span class="mspace" style="color:grey;margin-right:0.26022222222222224em;"></span><span class="mbin" style="color:grey;">−</span><span class="mspace" style="color:grey;margin-right:0.26022222222222224em;"></span><span class="mord mathtt" style="color:grey;">09</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mrel" style="color:grey;">:</span><span class="mspace" style="color:grey;margin-right:0.3252777777777778em;"></span><span class="mord mathtt" style="color:grey;">2014</span></span></span></span></span></span><span>﻿</span></span></p></blockquote><h2 id="6d428245-e2b2-4da1-b8ea-61c188c2ccae" class="block-color-orange"><strong> Certifications</strong></h2><h3 id="c984d27b-eb04-47b9-bd23-fe0781412a92" class="">MTA</h3><blockquote id="3909247b-3f65-4cb8-92c9-0b973c30ed65" class="block-color-gray"><mark class="highlight-gray">Microsoft Certified:</mark><p id="88e2ef94-0bec-4e0c-93ad-847c3ba641e4" class=""><mark class="highlight-gray"><code>2022</code></mark><mark class="highlight-gray"> </mark></p></blockquote><h3 id="a7293892-cd85-4e86-8cf9-0e5670be60e3" class="">DP 900 </h3><blockquote id="b303ebe8-8b99-4d1f-be91-04f403737914" class="block-color-gray"><mark class="highlight-gray">Microsoft Certified: Azure Data Fundamental</mark><p id="4eb4a21e-fd1a-45f9-85cd-bd4f3285dc08" class=""><mark class="highlight-gray"><code>2022</code></mark><mark class="highlight-gray"> </mark></p></blockquote><h3 id="71828b02-38ba-49b0-8fd0-7577e9430ab6" class="">Revit Certified User </h3><blockquote id="afb7161e-c9f4-4f83-a91a-6de9a0abcd91" class="block-color-gray">Autodesk &amp; University of Kent <p id="4c7c1fde-59a5-4ba7-9edb-6c149e57acdd" class=""><mark class="highlight-gray"><code>2021</code></mark><mark class="highlight-gray"> </mark></p></blockquote><h3 id="10abec0d-b39f-4692-ab8b-a7e0f96a2ba5" class="">Fundamentals of Digital Marketing</h3><blockquote id="dd481542-e2dc-4f0d-a126-c46d5ca80d7c" class="block-color-gray">Google <mark class="highlight-gray">Certified</mark><p id="8b97f3c1-f6c2-4829-b1cc-2b9ddfd8c9a8" class=""><mark class="highlight-gray"><code>2019</code></mark><mark class="highlight-gray"> </mark></p></blockquote><p id="1f119d48-0f77-4cc7-ae73-a9354b91c66f" class="">
- </p></div></div><hr id="d6e302d1-7bdf-46b8-90c1-085e015929b7"/><p id="88577910-f40e-458c-b9b6-d63c97865295" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="grey"><mstyle mathsize="0.9em"><mtext>⇨</mtext></mstyle></mstyle></mrow><annotation encoding="application/x-tex">\color {grey} \small ⇨</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord sizing reset-size6 size5" style="color:grey;">⇨</span></span></span></span></span><span>﻿</span></span> <mark class="highlight-gray">02 - Supporting elements, I’m sure you trust me but here is some evidence to back up, clams </mark></p><div id="5c8cb677-d8e1-4aec-9e9e-7be45ec9dd29" class="column-list"><div id="5171887b-7853-4fc4-affc-6e381f879642" style="width:33.33333333333333%" class="column"><h2 id="c4d3b1bf-7545-4640-b174-d919e17bfa0a" class="block-color-orange"><strong> Portfolio</strong></h2><hr id="824121f7-36ec-446b-b88b-a80a5bb30f6f"/><p id="9450d14a-0cde-4e48-9afe-7f0e3a78ed0b" class="block-color-gray_background">
-    {% endblock %}
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h4>Team Energy Project</h4>
+          <p>A we tool for predicting household energy use based of demographic infomation</p>
+          <p class="w3-opacity">Learn More? </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>In closing.</b></h1>
+    <hr style="width:50px;border:12px solid red" class="w3-round">
+    <h3>Thankyou</h3>
+    <p>
+Regardless of who you are I hope this Digital CV have been interesting and a little different. I'm always looking new opportunities so feel free to reach out to me. It don't have to be a role I'm nesiserally actively looking for, if it offers me interesting opportunities, The ability to grow or a good pay then I always have the time for new proposals.</p>
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+  <div class="w3-row">
+    <div>
+      <p class="w3-left">Made with ❤️ by Jordan Harris</p>
+    </div>
+    <div>
+      <p class="w3-right">
+  	  <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Email
+      </a>
+      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Linkedin
+      </a>
+
+      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Github</a></p>
+
+    </div>
+  </div>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
