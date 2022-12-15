@@ -1,169 +1,36 @@
-{% extends 'base.html' %}
-{% block head %}
-{% endblock %}
-{% block body %}
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-  <!-- Header -->
-  <div class="w3-container" id="services" style="margin-top:80px">
-    <h1 class="w3-jumbo"><b>Jordan Harris</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>About me.</b></h1>
-    <hr style="width:50px;border:12px solid red" class="w3-round">
-    <h3>My Basic Details</h3>
-    <p>My Name is <strong>Jordan Lee Harris</strong> and I was born on the <strong>6th of June 1995</strong> in </strong>Kent, United Kingdom</strong>. I'm formally trained in Architecture with roughly 5 years of industry exspirnace. This has given me a strong foundation in problem solving, working in dynamic teams of varying scale and discipline in mutable sectors, nations cultures and languages. I have also gained strong self motivation skills
+<!DOCTYPE html>
+<html lang="en">
 
-most importantly the ability to quickly learn and adapt to a task, challenge, problem and my own mistakes.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Harris</title>
+    <link rel="stylesheet" href="/static/main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 
-I have also
+<body>
+    <div class="lottie-bg">
+        <lottie-interactive path="https://assets1.lottiefiles.com/packages/lf20_91DQOE.json" style="position:absolute; right:0; left:0; height: 100%;" loop
+            autoplay>
+        </lottie-interactive>
+    </div>
+    <div class="w3-row">
+      <div class="w3-container w3-card w3-white w3-opacity">
 
-and work in the industry and I'm moving to a Coding role. I'm hoping to find a Graceful balance between my chosen disciplines.
- 	</p>
-    <h3>A Quick Overview</h3>
-	<p>
-
-I am a highly motivated, driven, and creative self-starter who's founded projects, most notably the Autism related Pangolin project.
-
-I also volunteer my time to charity projects including “A Village in Syria”. Interest in the physical and digital construction industry has led me to continue developing my technical skills with my current and recent endeavours encompassing coding, software development, VR/AR, 4D construction, BIM modelling, Digital Twin, and simulations.
-    <h3>Let's Go a little more in-depth</h3>
-- I am passionate about technology and am always building and modifying computers and other items for instance; Websites, software, and hardware including 3D printing.
-    - I enjoy Health and fitness both physical and mental including running, gaming, and self-care.
-- I love learning and I'm always attending courses in my free time to add skills that interest me and further my technical skill and career goals.
-- I have a strong opinion towards Neurodiversity and inclusive design. An approach I bring with me into all of my endeavours.
-	</p>
-</div>
-
-  <ul>
-    {% for item in data1 %}
-      <h3>{{item.title}}</h3>
-      <p>{{item.profile}}</p>
-    {% endfor %}
-  </ul>
-
-  <ul>
-    {% for item in data2 %}
-      <li>{{item.Management}}</li>
-    {% endfor %}
-  </ul>
-
-<!-- Projects -->
-<div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Projects.</b></h1>
-    <hr style="width:50px;border:12px solid red" class="w3-round">
-  </div>
-<!-- Energy.App -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h4>Energy.App</h4>
-          <p>A we tool for predicting household energy use based of demographic infomation</p>
-          <p class="w3-opacity">Learn More? </p>
-        </div>
+        <h2><b>Hi, im <a href="https://www.w3schools.com/w3css/default.asp" title="jordan Harris" target="_blank" class="w3-hover-opacity link-text">Jordan Harris<a>. I am a passionate and goals oriented individual with a classical Architectural background with a technical skill set that stems into building design, Project Management, Web Design, Data Science and Programming.  I have a keen passion for self development and I always have a new topic of interest or ongoing project. I'm also Passionate about inclusivity and accessibility with multiple related projects</b></h2>
       </div>
     </div>
-  </div>
 
-<!-- Energy.App -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h4>Olist</h4>
-          <p>A we tool for predicting household energy use based of demographic infomation</p>
-          <p class="w3-opacity">Learn More? </p>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- Energy.App -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h4>Kaggle</h4>
-          <p>A we tool for predicting household energy use based of demographic infomation</p>
-          <p class="w3-opacity">Learn More? </p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Energy.App -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h4>Kaggle</h4>
-          <p>A we tool for predicting household energy use based of demographic infomation</p>
-          <p class="w3-opacity">Learn More? </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- Lottie libraries -->
+    <script type="text/javascript"
+        src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
-<!-- Technical Skills. -->
-  <div class="w3-container" id="Technical Skills" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Technical Skills.</b></h1>
-    <hr style="width:50px;border:12px solid red" class="w3-round">
-    <h3>Technical Skills</h3>
-    <p>I generally consider myself as a jack of all trades and master of none and that describes my overall skillset.  I’m not going to insult your intelligence and pretend I’m the long lost Unicorn who can do everything under the sun and has marterd each of my skills.
+    <!-- Our interactivity code -->
+    <script type="text/javascript" src="/script.js"></script>
+</body>
 
-However I am non the less very cabale in each area I have outlined. due to the nature of my wide skillset im also very capabi7le at adapting to issues and quickly updating my skillset to allow me to sold a problem of fit into a role.
-
-I am strongly agenst the idea of overselling myself and im very transparent about my skill set and abilities. If there is a specific set of skill you would like that I lack please mention this to me. Im constantly leaning new skill and growing my base knowledge and assuming time allowing would be happy to adding skills for you into my roster.
-    </p>
-  </div>
-<!-- End page content -->
-  </div>
-
-<!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>In closing.</b></h1>
-    <hr style="width:50px;border:12px solid red" class="w3-round">
-    <h3>Thankyou</h3>
-    <p>
-Regardless of who you are I hope this Digital CV have been interesting and a little different. I'm always looking new opportunities so feel free to reach out to me. It don't have to be a role I'm nesiserally actively looking for, if it offers me interesting opportunities, The ability to grow or a good pay then I always have the time for new proposals.</p>
-  </div>
-<!-- End page content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-  <div class="w3-row">
-    <div>
-      <p class="w3-left">Made with ❤️ by Jordan Harris</p>
-    </div>
-    <div>
-      <p class="w3-right">
-   	   <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Email
-      </a>
-      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Linkedin
-      </a>
-
-      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Github</a></p>
-
-    </div>
-  </div>
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-{% endblock %}
+</html>

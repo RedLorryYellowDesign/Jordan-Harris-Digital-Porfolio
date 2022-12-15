@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.lottie-bg {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.w3-card{
+justify-content: left;
+align-items: center;
+position: absolute;
+top: 15%;
+left:15%;
+right:15%;
+bottom:15%;
+text-align: left;
+border: 10px;
+border-radius: 20px;
+}
+
+.p2 {
+font-family: Helvetica, sans-serif;
+}
+
+.link-text{
+font-family: Times-NewRoman, Times;
+color:rgb(255, 99, 71);
+font-size: 35px;
+}

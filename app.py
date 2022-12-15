@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from Content import *
 
-
 app = Flask(__name__)
-
 
 @app.route('/')
 def index():
@@ -13,12 +11,13 @@ def index():
 def LandingPage():
     return render_template('Portfolio.html')
 
+@app.route('/cv')
+def cv():
+    return render_template('cv.html')
+
 @app.route('/test')
 def test():
-    #return "Hello World";
-
-    return render_template('hello_world.html', data = data)
-
+    return render_template('test.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
