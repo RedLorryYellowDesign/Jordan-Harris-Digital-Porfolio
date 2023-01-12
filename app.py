@@ -2,7 +2,6 @@
 from flask import Flask, render_template, request, redirect, url_for # Imports base flask dependantsies
 # from flask_assets import Environment, Bundle
 from flask_caching import Cache # Allows for a Cache
-from flask_compress import Compress # Allows for asset Compresion
 
 # Flast Configuration
 config = {
@@ -14,13 +13,6 @@ config = {
 app = Flask(__name__)
 app.config.from_mapping(config)
 cache = Cache(app)
-compress = Compress()
-
-# Compression of assets to improve performance
-def start_app():
-    app = Flask(__name__)
-    compress.init_app(app)
-    return app
 
 # API Call to root directory
 @app.route('/')
