@@ -1,8 +1,5 @@
 {% extends "base.html" %}
 
-{% block head %}
-{% endblock %}
-
 {% block body %}
   <!-- Lottie Background -->
   <div class="lottie-bg">
@@ -117,10 +114,4 @@
       <button data-section="#education">EDUCATION</button>
       <button data-section="#contact">LETS CHAT</button>
     </div>
-    <!-- Lottie libraries -->
-    <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-
-    <script src="{{url_for('static', filename='main.js')}}"></script>
 {% endblock %}
