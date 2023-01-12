@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
 
-<head>
-  <title>Jordan Harris</title>
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{% block head %}
+{% endblock %}
 
-
-  <link rel="stylesheet" href="/static/main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
+{% block body %}
   <!-- Lottie Background -->
   <div class="lottie-bg">
     <lottie-interactive path="/static/Lottie/93539-background.json" style="position:absolute; right:0; left:0; height: 100%;" loop autoplay>
@@ -20,7 +12,7 @@
   <!-- Header and defult start -->
   <div class="card" data-state="#about">
     <div class="card-header">
-      <img class="card-avatar" src="https://media.licdn.com/dms/image/D4E03AQEiZHJg6eOFIw/profile-displayphoto-shrink_800_800/0/1664910189129?e=1678320000&v=beta&t=ZStj2FuMmsZyLFvlWGydjawFs5KfRiYoMqC5spqVt4k" alt="avatar">
+      <img class="card-avatar" src="/static/images/JordanHarris.png" alt="avatar">
       <h1 class="card-fullname">Jordan Harris<sub> MArch BSc Hons</sub></h1>
       <h2 class="card-jobtitle"> Designer. Programer. Problem Solver.</h2>
     </div>
@@ -131,4 +123,4 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
     <script src="{{url_for('static', filename='main.js')}}"></script>
-</body>
+{% endblock %}
