@@ -7,5 +7,5 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 CMD ["gunicorn", "--bind",  ":5001", "wsgi:app"]
 
-# sudo docker build -t docker-flask-gunicorn-nginx . 
-# sudo docker run -it -p 5001:5001 docker-flask-gunicorn-nginx
+# sudo docker build -t docker-flask-gunicorn-nginx .
+# sudo docker run -it -p 5001:5001
