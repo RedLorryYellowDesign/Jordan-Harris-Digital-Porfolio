@@ -1,15 +1,9 @@
-# docker-flask-gunicorn-nginx
+# docker-nginx-flask-demo
 
-Boilerplate project template for a generic dockerized Flask application deployed with gunicorn and Nginx configurations.
+Example of Python/Flask webapp running behing nginx+tls in Docker Compose
 
-## Quickstart
+Launch `run.sh` and open [https://localhost](https://localhost) or call `curl --insecure https://localhost`
 
-Run in this path:
+---
 
-```sh
-docker-compose up
-
-```
-
-This will build the docker image and the production-ready Flask app will be running on http://my-public-ip:5001 (or http://localhost:5001 for local machine).
-Static files will be served by Nginx on http://my-public-ip/static/.
+You can find the explanation [in my article on Medium](https://medium.com/geekculture/webapp-nginx-and-ssl-in-docker-compose-6d02bdbe8fa0)
