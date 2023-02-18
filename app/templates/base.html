@@ -1,23 +1,10 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
-
-  <head>
-    <title>Jinja Demo Site</title>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Smarter page templates with Flask & Jinja."
-    />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link href="/static/css/home.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    {% include 'navigation.html' %}
-    <div class="container">
-        <h1>Jinja Demo Site</h1>
-        <p>Smarter page templates with Flask & Jinja.</p>
-    </div>
-  </body>
-
-</html>
+<head>
+  <title>Jordan Harris</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
